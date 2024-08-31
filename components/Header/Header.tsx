@@ -42,8 +42,8 @@ function Header() {
   const onMenuClick = () => {
     setToggleMenu(!toggleMenu);
     const menuIcon = document.querySelector("#menu-bars");
-    menuIcon?.classList.toggle("fa-bars", toggleMenu);
-    menuIcon?.classList.toggle("fa-times", !toggleMenu);
+    menuIcon?.classList.toggle("bx-menu", toggleMenu);
+    menuIcon?.classList.toggle("bx-x", !toggleMenu);
   };
 
   return (
@@ -75,10 +75,15 @@ function Header() {
       <div className={styles.header__icons}>
         <span
           id="menu-bars"
-          className={classNames("fas fa-bars", styles.menu)}
+          className={classNames("bx bx-menu bg-stone-200 text-black hover:bg-red-600 hover:text-white", styles.menu)}
           onClick={onMenuClick}
         />
-        <span className="fas fa-search" />
+        <a
+          href="https://api.whatsapp.com/send/?phone=%2B12064199372&text&type=phone_number&app_absent=0"
+          target="_blank"
+        >
+          <span className="bx bxl-whatsapp bg-green-500 text-white hover:bg-green-400" />
+        </a>
       </div>
     </header>
   );

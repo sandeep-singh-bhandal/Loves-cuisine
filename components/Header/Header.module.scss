@@ -53,13 +53,11 @@
     span {
       width: 4.5rem;
       height: 4.5rem;
-      font-size: 1.7rem;
+      font-size: 3.2rem;
       text-align: center;
       line-height: 4.5rem;
       cursor: pointer;
       border-radius: 50%;
-      color: var(--black);
-      background: var(--grey);
       transition: var(--transition);
 
       &.menu {
@@ -67,8 +65,6 @@
       }
 
       &:hover {
-        color: var(--white);
-        background: var(--green);
         transform: rotate(360deg);
       }
     }
