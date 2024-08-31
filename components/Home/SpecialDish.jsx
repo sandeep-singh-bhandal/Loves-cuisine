@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import styles from './SpecialDish.module.scss'
 
 function SpecialDish({ title, subtitle, description, img }) {
@@ -12,7 +13,7 @@ function SpecialDish({ title, subtitle, description, img }) {
         </a>
       </div>
       <div className={styles['special-dish__image']}>
-        <img src={img} alt={title} />
+        <Image src={img} alt={title} />
       </div>
     </div>
   )

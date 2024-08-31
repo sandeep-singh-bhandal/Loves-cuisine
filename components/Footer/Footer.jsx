@@ -21,15 +21,9 @@ function Footer() {
         </div>
         <div className={styles.footer__column}>
           <h3 className={styles.title}>contact info</h3>
-          <a className={styles.footer__link}>
-            +1 (206) 419-9372
-          </a>
-          <a className={styles.footer__link}>
-            +1 (206) 419-9372
-          </a>
-          <a className={styles.footer__link}>
-            lovesyummycuisine@gmail.com
-          </a>
+          <a className={styles.footer__link}>+1 (206) 419-9372</a>
+          <a className={styles.footer__link}>+1 (206) 419-9372</a>
+          <a className={styles.footer__link}>lovesyummycuisine@gmail.com</a>
           <a className={styles.footer__link}>
             27433 227th PI SE <br />
             Maple Valley, WA 98038
@@ -53,7 +47,7 @@ function Footer() {
         </div>
       </div>
       <div className={styles.footer__credit}>
-        Copyright @ 2022 by <a href="#">Loves's Yummy Cuisine</a>
+        Copyright @ 2022 by <a href="#">Loves&apos;s Yummy Cuisine</a>
       </div>
     </footer>
   );
