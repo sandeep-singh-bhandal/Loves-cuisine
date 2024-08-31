@@ -13,7 +13,7 @@ function SpecialDish({ title, subtitle, description, img }) {
         </a>
       </div>
       <div className={styles['special-dish__image']}>
-        <Image src={img} alt={title} />
+        <Image src={img} alt={title} className='w-full h-full object-contain' width={2000} height={2000} />
       </div>
     </div>
   )

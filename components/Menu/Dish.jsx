@@ -1,11 +1,17 @@
-import Stars from './StarRating'
-import styles from './Dish.module.scss'
-import Image from 'next/image'
+import Stars from "./StarRating";
+import styles from "./Dish.module.scss";
+import Image from "next/image";
 
-function Dish({ title, img, price, description,rating }) {
+function Dish({ title, img, price, description, rating }) {
   return (
     <div className={styles.dish}>
-      <Image className={styles.dish__image} src={img} alt={title} />
+      <Image
+        className={styles.dish__image}
+        src={img}
+        alt={title}
+        width={250}
+        height={250}
+      />
       <h3 className={styles.dish__title}>{title}</h3>
       {description ? (
         <p className={styles.dish__description}>{description}</p>
@@ -13,7 +19,7 @@ function Dish({ title, img, price, description,rating }) {
       <Stars value={rating} />
       <span className={styles.dish__price}>{`$${price}`}</span>
     </div>
-  )
+  );
 }
 
-export default Dish
+export default Dish;

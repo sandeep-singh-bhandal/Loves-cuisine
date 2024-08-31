@@ -5,7 +5,7 @@ const sliderItems = [
     subtitle: 'Live Catering',
     description:
       'Servicing since 2022, with many happy customers',
-    img: 'images/logo.png',
+    img: '/images/logo.png',
   }
 ]
 
