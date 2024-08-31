@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import styles from '@/styles/components/Loader.module.scss'
+import styles from './Loader.module.scss'
 
 function Loader() {
   useEffect(() => {
