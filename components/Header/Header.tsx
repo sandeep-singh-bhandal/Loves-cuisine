@@ -3,6 +3,8 @@ import classNames from "classnames";
 import { useEffect, useState } from "react";
 import menuItems from "@/utils/menuItems";
 import styles from "./Header.module.scss";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAppleAlt, faMicrophone } from "@fortawesome/free-solid-svg-icons";
 
 function Header() {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -83,6 +85,7 @@ function Header() {
           target="_blank"
         >
           <span className="bx bxl-whatsapp bg-green-500 text-white hover:bg-green-400" />
+          <FontAwesomeIcon icon={faMicrophone}/>
         </a>
       </div>
     </header>
