@@ -6,7 +6,7 @@ function Dish({ title, img, price, description, rating }) {
   return (
     <div className={styles.dish}>
       <Image
-        className={styles.dish__image}
+        className={`m-auto ${styles.dish__image}`}
         src={img}
         alt={title}
         width={250}

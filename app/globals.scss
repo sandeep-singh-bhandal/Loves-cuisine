@@ -64,12 +64,11 @@ section {
   background: var(--black);
   border-radius: 0.5rem;
   cursor: pointer;
-  padding: 0.8rem;
+  padding: 1rem;
   transition: var(--transition);
 
   &:hover {
     background: var(--green);
-    letter-spacing: 0.1rem;
   }
 }
 
