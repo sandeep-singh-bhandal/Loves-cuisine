@@ -1,0 +1,46 @@
+.dish {
+  $dish: &;
+  padding: 50px;
+  background: var(--white);
+  border-radius: 0.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: var(--box-shadow);
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  cursor: pointer;
+  transition: var(--transition);
+    &:hover{
+      transform: scale(1.1);
+    }
+
+  &__icon {
+    height: auto !important;
+    width: 50px;
+    border-radius: 1rem;
+    transition: var(--transition);
+    margin: auto;
+  }
+
+  &__title {
+    color: var(--black);
+    font-size: 2.5rem;
+    transition: var(--transition);
+    margin-top: 2rem;
+  }
+
+  &__description {
+    color: var(--light-color);
+    font-size: 1.6rem;
+    padding: .5rem 0;
+    line-height: 1.5;
+  }
+
+
+  @media screen and (max-width: 450px) {
+    &__image {
+      width: 100%;
+      height: auto;
+    }
+  }
+}

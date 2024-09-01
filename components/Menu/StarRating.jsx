@@ -2,6 +2,8 @@
 import { useState } from 'react'
 import classNames from 'classnames'
 import styles from './StarRating.module.scss'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faStar } from '@fortawesome/free-solid-svg-icons'
 
 function StarRating({ value }) {
   return (
@@ -9,10 +11,11 @@ function StarRating({ value }) {
       {[...Array(5)].map((star, index) => {
         const ratingValue = index + 1
         return (
-          <span
+          <FontAwesomeIcon
+            icon={faStar}
             key={index}
             data-value={ratingValue}
-            className={classNames('fas', 'fa-star', styles.star, {
+            className={classNames(styles.star, {
               [styles['marked']]: (value) >= ratingValue
             })} 
           />

@@ -1,10 +1,19 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styles from "./Footer.module.scss";
+import { faContactBook, faHandPointer, faICursor, faLink } from "@fortawesome/free-solid-svg-icons";
+import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 
 function Footer() {
   return (
-    <footer className={styles.footer}>
+    <footer className={styles.footer} id="contact">
+      <h1 className="text-center text-8xl text-red-500 font-black">
+        Contact Us
+      </h1>
       <div className={styles.footer__container}>
         <div className={styles.footer__column}>
+          <span className={styles.footer__icon}>
+            <FontAwesomeIcon icon={faLink} />
+          </span>
           <h3 className={styles.title}>quick links</h3>
           <a href="#home" className={styles.footer__link}>
             Home
@@ -20,6 +29,9 @@ function Footer() {
           </a>
         </div>
         <div className={styles.footer__column}>
+          <span className={styles.footer__icon}>
+            <FontAwesomeIcon icon={faContactBook} />
+          </span>
           <h3 className={styles.title}>contact info</h3>
           <a className={styles.footer__link}>+1 (206) 419-9372</a>
           <a className={styles.footer__link}>+1 (206) 419-9372</a>
@@ -30,6 +42,9 @@ function Footer() {
           </a>
         </div>
         <div className={styles.footer__column}>
+          <span className={styles.footer__icon}>
+            <FontAwesomeIcon icon={faInstagram} />
+          </span>
           <h3 className={styles.title}>follow us</h3>
           <a href="#" className={styles.footer__link}>
             Facebook

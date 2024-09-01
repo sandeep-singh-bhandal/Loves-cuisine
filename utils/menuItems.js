@@ -7,14 +7,14 @@ const menuItems = [
   },
   {
     id: 2,
-    name: 'Services',
-    href: '#services',
+    name: 'Menu',
+    href: '#menu',
     active: false
   },
   {
     id: 3,
-    name: 'Menu',
-    href: '#menu',
+    name: 'Services',
+    href: '#services',
     active: false
   },
   {
