@@ -26,8 +26,8 @@ function SpecialDish({ title, subtitle, description, img }) {
                 <Image src="/images/menu.jpg" alt="menu" height={400} width={400}/>
                 <div className="flex items-center justify-end p-6">
                   <button
-                    className="text-red-600 font-black ease-linear transition-all duration-150 absolute top-12 right-12 
-                    text-3xl bg-white h-12 w-12 rounded-full"
+                    className="text-red-600 font-black ease-linear transition-all duration-150 absolute top-9 right-9 
+                    text-3xl bg-white h-16 w-16 rounded-full"
                     type="button"
                     onClick={() => setShowModal(false)}
                   >
