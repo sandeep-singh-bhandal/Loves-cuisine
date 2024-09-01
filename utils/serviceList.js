@@ -1,4 +1,4 @@
-import { faBusinessTime, faCake, faCalendar, faGift, faNoteSticky, faRunning } from "@fortawesome/free-solid-svg-icons";
+import { faBriefcase, faCake, faCalendarDays, faChampagneGlasses, faGift, faRunning } from "@fortawesome/free-solid-svg-icons";
 const serviceList = [
     {
       id: 1,
@@ -14,19 +14,19 @@ const serviceList = [
     },
     {
       id: 3,
-      icon: faRunning,
+      icon: faChampagneGlasses,
       title: 'Party Catering',
       description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt ratione eos voluptas ipsa itaque quibusdam magnam asperiores, fuga quisquam est architecto dolores, eligendi sapiente! Sed suscipit ducimus corrupti tempore animi.",
     },
     {
       id: 4,
-      icon: faCalendar,
+      icon: faCalendarDays,
       title: 'Event Catering',
       description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt ratione eos voluptas ipsa itaque quibusdam magnam asperiores, fuga quisquam est architecto dolores, eligendi sapiente! Sed suscipit ducimus corrupti tempore animi.",
     },
     {
       id: 5,
-      icon: faBusinessTime,
+      icon: faBriefcase,
       title: 'Corporate Catering',
       description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt ratione eos voluptas ipsa itaque quibusdam magnam asperiores, fuga quisquam est architecto dolores, eligendi sapiente! Sed suscipit ducimus corrupti tempore animi.",
     },

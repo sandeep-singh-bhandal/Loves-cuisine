@@ -60,6 +60,9 @@
       cursor: pointer;
       border-radius: 50%;
       transition: var(--transition);
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
       &.menu {
         display: none;
@@ -99,7 +102,9 @@
     &__icons {
       span {
         &.menu {
-          display: inline-block;
+          display: flex;
+          justify-content: center;
+          align-items: center;
         }
       }
     }
