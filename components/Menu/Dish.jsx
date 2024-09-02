@@ -13,11 +13,7 @@ function Dish({ title, img, price, description, rating }) {
         height={250}
       />
       <h3 className={styles.dish__title}>{title}</h3>
-      {description ? (
-        <p className={styles.dish__description}>{description}</p>
-      ) : null}
       <Stars value={rating} />
-      <span className={styles.dish__price}>{`$${price}`}</span>
     </div>
   );
 }
