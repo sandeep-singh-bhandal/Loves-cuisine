@@ -54,7 +54,7 @@ function Header() {
   return (
     <header className={styles.header}>
       <a href="#" className={styles.header__logo}>
-        Loves&apos;s Cuisine
+        Love&apos;s Cuisine
       </a>
       <nav
         id="nav"

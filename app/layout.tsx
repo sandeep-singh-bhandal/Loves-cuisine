@@ -8,8 +8,8 @@ const inter = Nunito({
 });
 
 export const metadata: Metadata = {
-  title: "LYC",
-  description: "LYC",
+  title: "Loves Yummy Cuisine",
+  description: "Live Catering Indian Food",
 };
 
 export default function RootLayout({
