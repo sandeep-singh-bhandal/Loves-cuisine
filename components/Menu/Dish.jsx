@@ -2,12 +2,12 @@ import Stars from "./StarRating";
 import styles from "./Dish.module.scss";
 import Image from "next/image";
 
-function Dish({ title, img, price, description, rating }) {
+function Dish({ title, path, rating }) {
   return (
     <div className={styles.dish}>
       <Image
         className={`m-auto ${styles.dish__image}`}
-        src={img}
+        src={path}
         alt={title}
         width={250}
         height={250}
