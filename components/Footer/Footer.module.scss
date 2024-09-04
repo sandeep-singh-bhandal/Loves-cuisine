@@ -13,6 +13,9 @@
   }
 
   &__column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     transition: var(--transition);
     .title {
       padding: 0.5rem 0;
