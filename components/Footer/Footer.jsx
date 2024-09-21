@@ -1,7 +1,15 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styles from "./Footer.module.scss";
-import { faContactBook, faHandPointer, faICursor, faLink } from "@fortawesome/free-solid-svg-icons";
-import { faInstagram } from "@fortawesome/free-brands-svg-icons";
+import {
+  faContactBook,
+  faHandPointer,
+  faLink,
+} from "@fortawesome/free-solid-svg-icons";
+import {
+  faFacebook,
+  faInstagram,
+  faTiktok,
+} from "@fortawesome/free-brands-svg-icons";
 
 function Footer() {
   return (
@@ -43,20 +51,27 @@ function Footer() {
         </div>
         <div className={styles.footer__column}>
           <span className={styles.footer__icon}>
-            <FontAwesomeIcon icon={faInstagram} />
+            <FontAwesomeIcon icon={faHandPointer} />
           </span>
           <h3 className={styles.title}>follow us</h3>
-          <a href="#" className={styles.footer__link}>
+          <a href="#" className={styles.footer__social}>
+            <FontAwesomeIcon icon={faFacebook} className="mx-2 text-4xl" />
             Facebook
           </a>
           <a
-            href="https://api.whatsapp.com/send/?phone=%2B12064199372&text&type=phone_number&app_absent=0"
+            href="https://www.tiktok.com/@livefoodcooking?is_from_webapp=1&sender_device=pc"
             target="_blank"
-            className={styles.footer__link}
+            className={styles.footer__social}
           >
-            Whatsapp
+            <FontAwesomeIcon icon={faTiktok} className="mx-2 text-4xl" />
+            Tik Tok
           </a>
-          <a href="#" className={styles.footer__link}>
+          <a
+            href="https://www.instagram.com/lovesyummycuisine?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+            className={styles.footer__social}
+            target="_blank"
+          >
+            <FontAwesomeIcon icon={faInstagram} className="mx-2 text-4xl" />
             Instagram
           </a>
         </div>
