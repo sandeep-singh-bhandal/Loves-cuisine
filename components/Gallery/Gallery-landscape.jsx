@@ -10,6 +10,7 @@ const responsive = {
   1024: { items: 3 },
 };
 
+
 const items = [
   <div className="item mx-6" data-value="1">
     <Image
