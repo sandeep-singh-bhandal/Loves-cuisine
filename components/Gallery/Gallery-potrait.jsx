@@ -49,6 +49,7 @@ const Gallery = () => (
     <AliceCarousel
       mouseTracking
       items={items}
+      key={items}
       responsive={responsive}
       controlsStrategy="alternate"
       disableDotsControls="true"
