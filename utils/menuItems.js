@@ -13,12 +13,18 @@ const menuItems = [
   },
   {
     id: 3,
+    name: 'Gallery',
+    href: '#gallery',
+    active: false
+  },
+  {
+    id: 4,
     name: 'Services',
     href: '#services',
     active: false
   },
   {
-    id: 4,
+    id: 5,
     name: 'Contact',
     href: '#contact',
     active: false

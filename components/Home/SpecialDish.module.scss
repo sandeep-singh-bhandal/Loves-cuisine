@@ -26,7 +26,16 @@
     padding: 0.5rem 0;
     line-height: 1.5;
   }
-
+  &__menuImgDiv{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    margin: auto 1.5rem;
+    background-color: black;
+    border-radius: 1rem;
+    padding: 2rem;
+  }
   &__image {
     flex: 1 1 45rem;
 
@@ -39,6 +48,14 @@
     &__title {
       font-size: 5rem;
       font-weight: 600;
+    }
+    &__menuImgDiv{
+      display: block;
+    }
+  }
+  @media screen and (max-width: 1270px) {
+    &__menuImgDiv{
+      display: block;
     }
   }
 }

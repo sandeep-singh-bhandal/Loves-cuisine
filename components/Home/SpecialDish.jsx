@@ -21,19 +21,34 @@ function SpecialDish({ title, subtitle, description, img }) {
         </button>
         {showModal ? (
           <>
-            <div className="justify-center items-center mt-36 flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
-              <div className="relative w-auto my-6 mx-auto max-w-6xl p-8">
-                <Image src="/images/menu.jpg" alt="menu" height={400} width={400}/>
-                <div className="flex items-center justify-end p-6">
-                  <button
-                    className="text-black font-black ease-linear transition-all duration-150 absolute top-14 right-14  
+            <div className="mt-36 overflow-x-hidden flex justify-center overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
+              <div className={styles["special-dish__menuImgDiv"]}>
+              <button
+                  className="text-black font-black ease-linear transition-all duration-150 absolute right-4 top-4 
                     text-3xl bg-gray-200 h-12 w-12 rounded-full"
-                    type="button"
-                    onClick={() => setShowModal(false)}
-                  >
-                    X
-                  </button>
-                </div>
+                  type="button"
+                  onClick={() => setShowModal(false)}
+                >
+                  X
+                </button>
+                <Image
+                  src="/images/menu1.jpg"
+                  alt="menu"
+                  height={400}
+                  width={400}
+                />
+                <Image
+                  src="/images/menu2.jpg"
+                  alt="menu"
+                  height={400}
+                  width={400}
+                />
+                <Image
+                  src="/images/menu3.jpg"
+                  alt="menu"
+                  height={400}
+                  width={400}
+                />
               </div>
             </div>
             <div className="opacity-60 fixed inset-0 z-40 bg-black"></div>
