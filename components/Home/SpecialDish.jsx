@@ -4,7 +4,7 @@ import styles from "./SpecialDish.module.scss";
 import "react-slideshow-image/dist/styles.css";
 import { useState } from "react";
 
-function SpecialDish({ title, subtitle, description, image }) {
+function SpecialDish({ title, subtitle, description, img }) {
   const [showModal, setShowModal] = useState(false);
   return (
     <div className={styles["special-dish"]}>
@@ -57,7 +57,7 @@ function SpecialDish({ title, subtitle, description, image }) {
       </div>
       <div className={styles["special-dish__image"]}>
         <Image
-          src={image}
+          src={img}
           alt={title}
           className="w-full h-full object-contain"
           width={2000}
