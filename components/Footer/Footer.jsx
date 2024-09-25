@@ -67,7 +67,7 @@ function Footer() {
             Tik Tok
           </a>
           <a
-            href="https://www.instagram.com/lovesyummycuisine?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+            href="https://www.instagram.com/love_s_cuisine/"
             className={styles.footer__social}
             target="_blank"
           >
