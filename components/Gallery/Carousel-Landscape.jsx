@@ -1,46 +1,82 @@
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import {useMediaQuery} from '@react-hook/media-query'
-import Image from 'next/image';
+import { Navigation, Autoplay } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { useMediaQuery } from "@react-hook/media-query";
+import Image from "next/image";
 
 // Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/bundle';
-import "./carousel.css"
+import "swiper/css";
+import "swiper/css/bundle";
+import "./carousel.css";
 
-const CarouselLandscape =() => {
+const CarouselLandscape = () => {
   const isSmallDevice = useMediaQuery("only screen and (max-width : 585px)");
-  const isMediumDevice = useMediaQuery("only screen and (min-width : 585px) and (max-width : 845px)");
+  const isMediumDevice = useMediaQuery(
+    "only screen and (min-width : 585px) and (max-width : 845px)"
+  );
   return (
-    <Swiper className=' mt-12 mb-12'
+    <Swiper
+      className=" mt-12 mb-12"
       // install Swiper modules
-      modules={[Navigation, Pagination, Scrollbar, A11y]}
+      modules={[Navigation, Autoplay]}
       spaceBetween={20}
-      slidesPerView={isMediumDevice?2:isSmallDevice?1:3}
-      navigation={isSmallDevice?false:true}
+      slidesPerView={isMediumDevice ? 2 : isSmallDevice ? 1 : 3}
+      navigation={isSmallDevice ? false : true}
+      loop={true}
+      autoplay={{
+        delay: 1500,
+        disableOnInteraction: false,
+      }}
       onSwiper={(swiper) => console.log(swiper)}
-      onSlideChange={() => console.log('slide change')}
+      onSlideChange={() => console.log("slide change")}
     >
       <SwiperSlide>
-        <Image src='/images/galleryImages/gallery-1.jpg' height={500} width={500}/>
+        <Image
+          src="/images/galleryImages/gallery-1.jpg"
+          height={500}
+          width={500}
+        />
       </SwiperSlide>
       <SwiperSlide>
-        <Image src='/images/galleryImages/gallery-1.jpg' height={500} width={500}/>
+        <Image
+          src="/images/galleryImages/gallery-1.jpg"
+          height={500}
+          width={500}
+        />
       </SwiperSlide>
       <SwiperSlide>
-        <Image src='/images/galleryImages/gallery-1.jpg' height={500} width={500}/>
+        <Image
+          src="/images/galleryImages/gallery-1.jpg"
+          height={500}
+          width={500}
+        />
       </SwiperSlide>
       <SwiperSlide>
-        <Image src='/images/galleryImages/gallery-1.jpg' height={500} width={500}/>
+        <Image
+          src="/images/galleryImages/gallery-1.jpg"
+          height={500}
+          width={500}
+        />
       </SwiperSlide>
       <SwiperSlide>
-        <Image src='/images/galleryImages/gallery-1.jpg' height={500} width={500}/>
+        <Image
+          src="/images/galleryImages/gallery-1.jpg"
+          height={500}
+          width={500}
+        />
       </SwiperSlide>
       <SwiperSlide>
-        <Image src='/images/galleryImages/gallery-1.jpg' height={500} width={500}/>
+        <Image
+          src="/images/galleryImages/gallery-1.jpg"
+          height={500}
+          width={500}
+        />
       </SwiperSlide>
       <SwiperSlide>
-        <Image src='/images/galleryImages/gallery-1.jpg' height={500} width={500}/>
+        <Image
+          src="/images/galleryImages/gallery-1.jpg"
+          height={500}
+          width={500}
+        />
       </SwiperSlide>
     </Swiper>
   );
