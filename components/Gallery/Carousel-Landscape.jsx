@@ -1,13 +1,14 @@
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import {useMediaQuery} from '@react-hook/media-query'
+import Image from 'next/image';
 
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/bundle';
 import "./carousel.css"
 
-export default () => {
+const CarouselLandscape =() => {
   const isSmallDevice = useMediaQuery("only screen and (max-width : 585px)");
   const isMediumDevice = useMediaQuery("only screen and (min-width : 585px) and (max-width : 845px)");
   return (
@@ -21,26 +22,28 @@ export default () => {
       onSlideChange={() => console.log('slide change')}
     >
       <SwiperSlide>
-        <img src='/images/galleryImages/gallery-1.jpg'/>
+        <Image src='/images/galleryImages/gallery-1.jpg' height={500} width={500}/>
       </SwiperSlide>
       <SwiperSlide>
-        <img src='/images/galleryImages/gallery-1.jpg'/>
+        <Image src='/images/galleryImages/gallery-1.jpg' height={500} width={500}/>
       </SwiperSlide>
       <SwiperSlide>
-        <img src='/images/galleryImages/gallery-1.jpg'/>
+        <Image src='/images/galleryImages/gallery-1.jpg' height={500} width={500}/>
       </SwiperSlide>
       <SwiperSlide>
-        <img src='/images/galleryImages/gallery-1.jpg'/>
+        <Image src='/images/galleryImages/gallery-1.jpg' height={500} width={500}/>
       </SwiperSlide>
       <SwiperSlide>
-        <img src='/images/galleryImages/gallery-1.jpg'/>
+        <Image src='/images/galleryImages/gallery-1.jpg' height={500} width={500}/>
       </SwiperSlide>
       <SwiperSlide>
-        <img src='/images/galleryImages/gallery-1.jpg'/>
+        <Image src='/images/galleryImages/gallery-1.jpg' height={500} width={500}/>
       </SwiperSlide>
       <SwiperSlide>
-        <img src='/images/galleryImages/gallery-1.jpg'/>
+        <Image src='/images/galleryImages/gallery-1.jpg' height={500} width={500}/>
       </SwiperSlide>
     </Swiper>
   );
 };
+
+export default CarouselLandscape;
