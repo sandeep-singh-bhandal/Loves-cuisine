@@ -9,7 +9,7 @@ function Main() {
   return (
     <main className={styles.main}>
       <SpecialDishes/>
-      <Dishes />
+      <Dishes/>
       <Services/>
       <Footer/>
       <GoUpButton/>

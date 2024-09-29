@@ -1,0 +1,16 @@
+img{
+    width: fit-content;
+    height: auto;
+}
+.swiper-button-prev,
+.swiper-button-next{
+    background-color: #f0f0f0;
+    color: rgb(250, 34, 34);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-weight:bolder
+}
+:root {
+    --swiper-navigation-size: 20px;
+  }
