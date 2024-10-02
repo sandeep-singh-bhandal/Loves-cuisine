@@ -54,12 +54,12 @@ function Footer() {
             <FontAwesomeIcon icon={faHandPointer} />
           </span>
           <h3 className={styles.title}>follow us</h3>
-          <a href="#" className={styles.footer__social}>
+          <a href="https://www.facebook.com/Lovesyummyindiancuisine?mibextid=ZbWKwL" className={styles.footer__social}>
             <FontAwesomeIcon icon={faFacebook} className="mx-2 text-4xl" />
             Facebook
           </a>
           <a
-            href="https://www.tiktok.com/@livefoodcooking?is_from_webapp=1&sender_device=pc"
+            href="https://www.tiktok.com/@lovenagra1?_t=8q8GIXYiJ7C&_r=1"
             target="_blank"
             className={styles.footer__social}
           >
