@@ -13,7 +13,7 @@ import {
 
 function Footer() {
   return (
-    <footer className={styles.footer} id="contact">
+    <section className={styles.footer} id="contact">
       <h1 className="text-center text-8xl text-red-500 font-black">
         Contact Us
       </h1>
@@ -79,7 +79,7 @@ function Footer() {
       <div className={styles.footer__credit}>
         Copyright @ 2022 by <a href="#">Loves&apos;s Yummy Cuisine</a>
       </div>
-    </footer>
+    </section>
   );
 }
 
