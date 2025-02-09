@@ -24,7 +24,7 @@ const dishList = [
     id: 4,
     title: "Matthi",
     path: "/images/matthi.jpg",
-    rating: "4",
+    rating: "5",
     category: "Sweets",
   },
   {
@@ -45,7 +45,7 @@ const dishList = [
     id: 7,
     title: "Shakkar Paarey",
     path: "/images/shakkarpaarey.jpg",
-    rating: "4",
+    rating: "5",
     category: "Sweets",
   },
   {
