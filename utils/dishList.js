@@ -9,7 +9,7 @@ const dishList = [
   {
     id: 2,
     title: "Barfi",
-    path: "/images/barfi.jpg",
+    path: "/images/barfisweet.jpg",
     rating: "4",
     category: "Sweets",
   },
