@@ -26,8 +26,8 @@ const CarouselLandscape = () => {
         delay: 1500,
         disableOnInteraction: false,
       }}
-      onSwiper={(swiper) => console.log(swiper)}
-      onSlideChange={() => console.log("slide change")}
+      // onSwiper={(swiper) => console.log(swiper)}
+      // onSlideChange={() => console.log("slide change")}
     >
       <SwiperSlide>
         <Image

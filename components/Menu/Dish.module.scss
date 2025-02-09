@@ -8,6 +8,7 @@
   position: relative;
   overflow: hidden;
   text-align: center;
+  animation: fade-out 0.5s 1;
   cursor: pointer;
   transition: var(--transition);
     &:hover {
@@ -34,5 +35,14 @@
       width: 100%;
       height: auto;
     }
+  }
+}
+
+@keyframes fade-out {
+  0%{
+    transform: scale(0);
+  }
+  100%{
+    transform: scale(1);
   }
 }
