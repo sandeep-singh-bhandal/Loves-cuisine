@@ -14,6 +14,11 @@ const menuCategory = [
       category: 'Sweets',
       active: false,
     },
+    {
+      id: 4,
+      category: 'Drinks',
+      active: false,
+    },
     
   ]
   

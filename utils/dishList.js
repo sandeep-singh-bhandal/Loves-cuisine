@@ -13,13 +13,13 @@ const dishList = [
     rating: "4",
     category: "Sweets",
   },
-  // {
-  //   id: 3,
-  //   title: "Paajji",
-  //   path: "/images/barfi.jpg",
-  //   rating: "4",
-  //   category: "Sweets",
-  // },
+  {
+    id: 3,
+    title: "Samosa",
+    path: "/images/samosa.jpg",
+    rating: "4",
+    category: "Sweets",
+  },
   {
     id: 4,
     title: "Matthi",

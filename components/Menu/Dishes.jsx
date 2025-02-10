@@ -21,8 +21,8 @@ function Dishes() {
         </p>
         {/* <h1 className="text-center text-4xl mb-4">
           Explore Different Categories
-        </h1>
-        <div className="flex justify-center items-center">
+        </h1> */}
+        {/* <div className="flex justify-center items-center">
           {menuCategory.map((item) => {
             return (
               <button
@@ -30,13 +30,13 @@ function Dishes() {
                 onClick={() => {
                   setCategory(item.category);
                   menuCategory.forEach((element) => {
-                    if (item.active===true) {
-                      element.active=false;
-                      item.active=true;
+                    if (item.active === true) {
+                      element.active = false;
+                      item.active = true;
                     }
-                    if (item.active===false){
-                      item.active=true;
-                      element.active=false;
+                    if (item.active === false) {
+                      item.active = true;
+                      element.active = false;
                     }
                   });
                 }}
@@ -45,7 +45,7 @@ function Dishes() {
                 }
                 bg-${
                   item.active === true ? "[#fd0103]" : "transparent"
-                } rounded-xl mx-6 mb-12 p-3 hover:bg-[#fd0103] hover:text-white`}
+                }  rounded-xl mx-6 mb-12 p-3 hover:bg-[#fd0103] hover:text-white`}
               >
                 {item.category}
               </button>
