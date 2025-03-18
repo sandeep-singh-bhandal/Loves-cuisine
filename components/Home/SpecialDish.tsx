@@ -4,7 +4,17 @@ import styles from "./SpecialDish.module.scss";
 import "react-slideshow-image/dist/styles.css";
 import { useState } from "react";
 
-function SpecialDish({ title, subtitle, description, img }) {
+function SpecialDish({
+  title,
+  subtitle,
+  description,
+  img,
+}: {
+  title: string;
+  subtitle: string;
+  description: string;
+  img: string;
+}) {
   const [showModal, setShowModal] = useState(false);
   return (
     <div className={styles["special-dish"]}>
@@ -23,7 +33,7 @@ function SpecialDish({ title, subtitle, description, img }) {
           <>
             <div className="mt-36 overflow-x-hidden flex justify-center overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
               <div className={styles["special-dish__menuImgDiv"]}>
-              <button
+                <button
                   className="text-black font-black ease-linear transition-all duration-150 absolute right-4 top-4 
                     text-3xl bg-gray-200 h-12 w-12 rounded-full"
                   type="button"

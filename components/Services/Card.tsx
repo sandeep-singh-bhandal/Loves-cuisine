@@ -1,8 +1,9 @@
 "use client"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styles from "./Card.module.scss";
+import { IconProp } from "@fortawesome/fontawesome-svg-core";
 
-function Card({ title,description, icon }) {
+function Card({ title,description, icon }:{title:string,description:string,icon:IconProp}) {
   return (
     <div className={styles.dish}>
       <FontAwesomeIcon

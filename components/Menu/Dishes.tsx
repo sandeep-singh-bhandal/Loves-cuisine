@@ -4,11 +4,11 @@ import CarouselLandscape from "../Gallery/Carousel-Landscape";
 import CarouselPotrait from "../Gallery/Carousel-Potrait";
 import dishList from "@/utils/dishList";
 import styles from "./Dishes.module.scss";
-// import { useState } from "react";
-// import menuCategory from "../../utils/menuCategory";
+import { useState } from "react";
+import menuCategory from "../../utils/menuCategory";
 
 function Dishes() {
-  // const [category, setCategory] = useState("Non Veg");
+  const [category, setCategory] = useState<string>("Non Veg");
   return (
     <>
       <section className={styles.dishes} id="menu">
@@ -19,10 +19,10 @@ function Dishes() {
           Crockery <br />
           Final Price Based On Items Chosen
         </p>
-        {/* <h1 className="text-center text-4xl mb-4">
+        <h1 className="text-center text-4xl mb-4">
           Explore Different Categories
-        </h1> */}
-        {/* <div className="flex justify-center items-center">
+        </h1>
+        <div className="flex justify-center items-center">
           {menuCategory.map((item) => {
             return (
               <button
@@ -40,23 +40,25 @@ function Dishes() {
                     }
                   });
                 }}
+
                 className={`text-3xl text-${
                   item.active === true ? "white" : ["#979797"]
                 }
                 bg-${
-                  item.active === true ? "[#fd0103]" : "transparent"
-                }  rounded-xl mx-6 mb-12 p-3 hover:bg-[#fd0103] hover:text-white`}
-              >
+                  item.active===true?"[#fd0103]" : "transparent"
+                }
+                rounded-xl mx-6 mb-12 p-3 hover:bg-[#fd0103] hover:text-white`}
+                >
                 {item.category}
               </button>
             );
           })}
-        </div> */}
+        </div>
         <div className={styles["dishes__container"]}>
           {dishList.map((item, index) => {
-            // if (item.category === category) {
+            if (item.category === category) {
               return <Dish key={index} {...item} />;
-            // }
+            }
           })}
         </div>
       </section>

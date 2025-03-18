@@ -4,12 +4,12 @@ import { useEffect, useState } from "react";
 import menuItems from "@/utils/menuItems";
 import styles from "./Header.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import { faWhatsapp, IconDefinition } from "@fortawesome/free-brands-svg-icons";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 
 function Header() {
-  const [toggleMenu, setToggleMenu] = useState(false);
-  const [menuClass, setMenuClass] = useState(faBars);
+  const [toggleMenu, setToggleMenu] = useState<boolean>(false);
+  const [menuClass, setMenuClass] = useState<IconDefinition>(faBars);
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -40,7 +40,7 @@ function Header() {
           }
         }
       });
-    });
+    }); 
   }, []);
 
   const onMenuClick = () => {

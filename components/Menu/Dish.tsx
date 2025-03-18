@@ -2,7 +2,15 @@ import Stars from "./StarRating";
 import styles from "./Dish.module.scss";
 import Image from "next/image";
 
-function Dish({ title, path, rating }) {
+function Dish({
+  title,
+  path,
+  rating,
+}: {
+  title: string;
+  path: string;
+  rating: string;
+}) {
   return (
     <div className={styles.dish}>
       <Image

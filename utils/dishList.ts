@@ -132,6 +132,14 @@ const dishList = [
     rating: "4",
     category: "Drinks",
   },
+  // {
+  //   id: 20,
+  //   title: "tea",
+  //   path: "/images/tea.jpg",
+  //   rating: "4",
+  //   category: "Drinks",
+  // },
+  
 ];
 
 export default dishList;

@@ -16,7 +16,6 @@ const CarouselLandscape = () => {
   return (
     <Swiper
       className=" mt-12 mb-12"
-      // install Swiper modules
       modules={[Navigation, Autoplay]}
       spaceBetween={20}
       slidesPerView={isMediumDevice ? 2 : isSmallDevice ? 1 : 3}
@@ -26,14 +25,13 @@ const CarouselLandscape = () => {
         delay: 1500,
         disableOnInteraction: false,
       }}
-      // onSwiper={(swiper) => console.log(swiper)}
-      // onSlideChange={() => console.log("slide change")}
     >
       <SwiperSlide>
         <Image
           src="/images/galleryImages/gallery-1.jpg"
           height={500}
           width={500}
+          alt="logo"
         />
       </SwiperSlide>
       <SwiperSlide>
@@ -41,6 +39,7 @@ const CarouselLandscape = () => {
           src="/images/galleryImages/gallery-1.jpg"
           height={500}
           width={500}
+          alt="logo"
         />
       </SwiperSlide>
       <SwiperSlide>
@@ -48,6 +47,7 @@ const CarouselLandscape = () => {
           src="/images/galleryImages/gallery-1.jpg"
           height={500}
           width={500}
+          alt="logo"
         />
       </SwiperSlide>
       <SwiperSlide>
@@ -55,6 +55,7 @@ const CarouselLandscape = () => {
           src="/images/galleryImages/gallery-1.jpg"
           height={500}
           width={500}
+          alt="logo"
         />
       </SwiperSlide>
       <SwiperSlide>
@@ -62,6 +63,7 @@ const CarouselLandscape = () => {
           src="/images/galleryImages/gallery-1.jpg"
           height={500}
           width={500}
+          alt="logo"
         />
       </SwiperSlide>
       <SwiperSlide>
@@ -69,6 +71,7 @@ const CarouselLandscape = () => {
           src="/images/galleryImages/gallery-1.jpg"
           height={500}
           width={500}
+          alt="logo"
         />
       </SwiperSlide>
       <SwiperSlide>
@@ -76,6 +79,7 @@ const CarouselLandscape = () => {
           src="/images/galleryImages/gallery-1.jpg"
           height={500}
           width={500}
+          alt="logo"
         />
       </SwiperSlide>
     </Swiper>
