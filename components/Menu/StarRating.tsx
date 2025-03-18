@@ -1,11 +1,10 @@
 "use client"
-import { useState } from 'react'
 import classNames from 'classnames'
 import styles from './StarRating.module.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar } from '@fortawesome/free-solid-svg-icons'
 
-function StarRating({ value }) {
+function StarRating({ value }:{value:number}) {
   return (
     <div className={styles['star-rating']}>
       {[...Array(5)].map((star, index) => {

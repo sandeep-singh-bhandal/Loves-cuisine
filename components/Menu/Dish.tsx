@@ -9,7 +9,7 @@ function Dish({
 }: {
   title: string;
   path: string;
-  rating: string;
+  rating: number;
 }) {
   return (
     <div className={styles.dish}>
