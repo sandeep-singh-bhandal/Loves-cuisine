@@ -6,6 +6,7 @@ import dishList from "@/utils/dishList";
 import styles from "./Dishes.module.scss";
 import { useState } from "react";
 import menuCategory from "../../utils/menuCategory";
+import clsx from "clsx";
 
 function Dishes() {
   const [category, setCategory] = useState<string>("Non Veg");
@@ -41,13 +42,9 @@ function Dishes() {
                   });
                 }}
 
-                className={`text-3xl text-${
-                  item.active === true ? "white" : ["#979797"]
-                }
-                bg-${
-                  item.active===true?"[#fd0103]" : "transparent"
-                }
-                rounded-xl mx-6 mb-12 p-3 hover:bg-[#fd0103] hover:text-white`}
+                className={clsx(`text-3xl rounded-xl mx-6 mb-12 p-3 
+                  hover:bg-[#fd0103] hover:text-white`,
+                  item.active===true?"text-white bg-[#fd0103]":"text-gray-500 bg-transparent")}
                 >
                 {item.category}
               </button>
