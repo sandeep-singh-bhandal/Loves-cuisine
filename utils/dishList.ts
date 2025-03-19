@@ -18,7 +18,7 @@ const dishList = [
     title: "Samosa",
     path: "/images/samosa.jpg",
     rating: 4,
-    category: "Sweets",
+    category: "Veg",
   },
   {
     id: 4,
@@ -34,13 +34,13 @@ const dishList = [
     rating: 4,
     category: "Sweets",
   },
-  // {
-  //   id: 6,
-  //   title: "Namkeen",
-  //   path: "/images/barfi.jpg",
-  //   rating: 4,
-  //   category: "Sweets",
-  // },
+  {
+    id: 6,
+    title: "Egg Curry",
+    path: "/images/eggcurry.jpg",
+    rating: 4,
+    category: "Non Veg",
+  },
   {
     id: 7,
     title: "Shakkar Paarey",
@@ -132,13 +132,20 @@ const dishList = [
     rating: 4,
     category: "Drinks",
   },
-  // {
-  //   id: 20,
-  //   title: "tea",
-  //   path: "/images/tea.jpg",
-  //   rating: 4,
-  //   category: "Drinks",
-  // },
+  {
+    id: 20,
+    title: "tea",
+    path: "/images/tea.jpg",
+    rating: 4,
+    category: "Drinks",
+  },
+  {
+    id: 21,
+    title: "Chilli Fish",
+    path: "/images/chillifish.jpg",
+    rating: 5,
+    category: "Non Veg",
+  },
   
 ];
 

@@ -18,7 +18,7 @@ const menuCategory = [
       id: 4,
       category: 'Drinks',
       active: false,
-    },
+    }
     
   ]
   

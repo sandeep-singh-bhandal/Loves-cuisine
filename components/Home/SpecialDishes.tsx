@@ -1,5 +1,5 @@
 import SpecialDish from './SpecialDish'
-import specialDishes from '@/utils/specialDishes'
+import specialDishes from '@/utils/homePage'
 import styles from './SpecialDishes.module.scss'
 
 function SpecialDishes() {

@@ -1,7 +1,7 @@
 "use client";
 import classNames from "classnames";
 import { useEffect, useState } from "react";
-import menuItems from "@/utils/menuItems";
+import menuItems from "@/utils/headerItems";
 import styles from "./Header.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWhatsapp, IconDefinition } from "@fortawesome/free-brands-svg-icons";
