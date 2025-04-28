@@ -45,8 +45,8 @@ function Footer() {
           <a className={styles.footer__link}>+1 (206) 419-9372</a>
           <a className={styles.footer__link}>lovesyummycuisine@gmail.com</a>
           <a className={styles.footer__link}>
-            27433 227th PI SE <br />
-            Maple Valley, WA 98038
+            26028 204th Ave SE,
+            <br /> Covington, WA 98042
           </a>
         </div>
         <div className={styles.footer__column}>
@@ -54,7 +54,10 @@ function Footer() {
             <FontAwesomeIcon icon={faHandPointer} />
           </span>
           <h3 className={styles.title}>follow us</h3>
-          <a href="https://www.facebook.com/Lovesyummyindiancuisine?mibextid=ZbWKwL" className={styles.footer__social}>
+          <a
+            href="https://www.facebook.com/Lovesyummyindiancuisine?mibextid=ZbWKwL"
+            className={styles.footer__social}
+          >
             <FontAwesomeIcon icon={faFacebook} className="mx-2 text-4xl" />
             Facebook
           </a>
