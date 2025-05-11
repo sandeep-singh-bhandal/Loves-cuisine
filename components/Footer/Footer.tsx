@@ -80,7 +80,18 @@ function Footer() {
         </div>
       </div>
       <div className={styles.footer__credit}>
-        Copyright @ 2022 by <a href="#">Loves&apos;s Yummy Cuisine</a>
+        <p>
+          Copyright @ 2022 by{" "}
+          <span className="text-[#fd0103]">Loves&apos;s Yummy Cuisine. </span>All rights reserved |
+          Designed and Developed by{" "}
+          <a
+            target="_blank"
+            className="text-blue-500 underline lowercase hover:text-blue-700"
+            href="https://portfolio-eight-green-32.vercel.app/"
+          >
+            sandeepbhandal.in
+          </a>
+        </p>
       </div>
     </section>
   );
