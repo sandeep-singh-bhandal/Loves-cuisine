@@ -14,7 +14,7 @@ import {
 function Footer() {
   return (
     <section className={styles.footer} id="contact">
-      <h1 className="text-center text-8xl text-red-500 font-black">
+      <h1 className="text-center text-8xl text-red-500 font-black mt-12">
         Contact Us
       </h1>
       <div className={styles.footer__container}>

@@ -12,7 +12,7 @@ function Dishes() {
   const [category, setCategory] = useState<string>("Non Veg");
   return (
     <>
-      <section className={styles.dishes} id="menu">
+      <section className={`${styles.dishes} bg-[#eee]`} id="menu">
         <h3 className="sub-heading">our menu</h3>
         <h1 className="heading">Menu Collection</h1>
         <p className="para">

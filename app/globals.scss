@@ -46,9 +46,9 @@ html {
 section {
   padding: 2rem;
 
-  &:nth-child(even) {
-    background-color: var(--grey);
-  }
+  // &:nth-child(even) {
+  //   background-color: var(--grey);
+  // }
 
   @media screen and (max-width: 991px) {
     padding: 2rem;
