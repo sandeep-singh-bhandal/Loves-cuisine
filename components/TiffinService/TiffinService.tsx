@@ -26,8 +26,7 @@ const TiffinService = () => {
           <ul className="mt-6 space-y-2 text-[#192A56] text-2xl list-disc list-inside">
             <li>Pure vegetarian North Indian meals</li>
             <li>Freshly cooked daily — no frozen food</li>
-            <li>Monthly, weekly & trial plans available</li>
-            <li>Free doorstep delivery</li>
+            <li>Monthly & weekly plans available</li>
           </ul>
 
           <p className="mt-4 font-semibold text-gray-900 text-2xl">
