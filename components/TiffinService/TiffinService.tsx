@@ -14,10 +14,10 @@ const TiffinService = () => {
           />
         </div>
         <div className="flex-1 text-center max-md:text-left md:text-left w-1/2 max-md:w-full my-auto">
-          <h1 className="text-6xl max-sm:text-5xl font-bold text-[#FD0103] mb-4">
+          <h1 className="text-6xl font-bold text-[#FD0103] mb-4">
             Fresh Indian Tiffin Service
           </h1>
-          <p className="text-2xl md:text-3xl text-[#192A56] leading-relaxed">
+          <p className="text-3xl text-[#192A56] leading-relaxed">
             Craving homemade Indian food in the USA? We’ve got you covered! Our
             daily tiffin service brings you fresh, flavorful, and hygienic
             meals.
