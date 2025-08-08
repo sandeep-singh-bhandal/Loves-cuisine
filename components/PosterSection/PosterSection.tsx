@@ -55,7 +55,6 @@ const PosterSection = () => {
 
           <ul className="mt-6 space-y-2 text-[#192A56] text-2xl list-disc list-inside">
             <li>Curry, Breads, Sweets & More</li>
-            <li>Pickup & Delivery Available</li>
             <li>Affordable Prices Starting $3</li>
           </ul>
           <a
