@@ -46,7 +46,7 @@ const PosterSection = () => {
       <div className="flex flex-col md:flex-row justify-around my-24 gap-16 md:px-10">
         <div className="flex-1 text-center max-md:text-left md:text-left w-1/2 max-md:w-full my-auto max-md:px-14 max-sm:px-0">
           <h1 className="text-6xl max-sm:text-7xl font-bold text-[#FD0103] mb-4">
-            FoOD TO GO
+            Food To Go
           </h1>
           <p className="text-3xl text-[#192A56] leading-relaxed">
             Freshly cooked Indian meals packed with love. <br />
