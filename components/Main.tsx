@@ -4,13 +4,13 @@ import styles from './Main.module.scss'
 import Footer from "./Footer/Footer"
 import GoUpButton from "./GoUpButton/ScrollUp"
 import Services from "./Services/Services"
-import TiffinService from './TiffinService/TiffinService'
+import PosterSection from './PosterSection/PosterSection'
 
 function Main() {
   return (
     <main className={styles.main}>
       <SpecialDishes/>
-      <TiffinService/>
+      <PosterSection/>
       <Dishes/>
       <Services/>
       <Footer/>
